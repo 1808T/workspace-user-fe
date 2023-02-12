@@ -6,7 +6,7 @@ Collaborative Workspace is a fully functioning task management Web App. The App 
 simple and organized task tracking that separates overarching goals or topics from specific tasks.
 Landing Page             |  Main App
 :-------------------------:|:-------------------------:
-![](https://res.cloudinary.com/tommie1808/image/upload/v1676184026/Repo%20Img/sign-in-page_iybvhz.png)  |  ![](https://res.cloudinary.com/tommie1808/image/upload/v1676184023/Repo%20Img/main-feature-page_cvodof.png) ![](https://res.cloudinary.com/tommie1808/image/upload/v1676184020/Repo%20Img/main-feature-page-2_fqbygy.png)
+![](https://res.cloudinary.com/tommie1808/image/upload/v1676184026/Repo%20Img/sign-in-page_iybvhz.png)  |  ![](https://res.cloudinary.com/tommie1808/image/upload/v1676184023/Repo%20Img/main-feature-page_cvodof.png)
 
 ## Features
 * UI written in modern __React__, using ES6 principles and functional components with React Hooks
