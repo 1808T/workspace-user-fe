@@ -26,7 +26,12 @@ Landing Page             |  Main App
 
 ## Live App
 * __The Live App is currently in progress to implement new feature__
-* https://my-workspace-7cb4d.web.app/
+* For user: https://my-workspace-7cb4d.web.app/
 * Sign up or use demo account:
 * __Email__: demo@gmail.com
 * __Password__ demo123
+
+* For admin: https://my-workspace-admin-6b475.web.app/
+* Demo account:
+* __Email__: admin@gmail.com
+* __Password__ 123456
