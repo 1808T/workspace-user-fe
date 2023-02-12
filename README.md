@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Collaborative Workspace App
+A collaboration web app that organizes projects into boards. It tells users what's being worked on, who's working on what, and where something is in a process with the __MERN__ stack (MongoDB/Express/React/Node)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+Collaborative Workspace is a fully functioning task management Web App. The App supports personal Task Boards, allowing
+simple and organized task tracking that separates overarching goals or topics from specific tasks.
+Landing Page             |  Main App
+:-------------------------:|:-------------------------:
+![](https://res.cloudinary.com/tommie1808/image/upload/v1676184026/Repo%20Img/sign-in-page_iybvhz.png)  |  ![](https://res.cloudinary.com/tommie1808/image/upload/v1676184023/Repo%20Img/main-feature-page_cvodof.png)
 
-## Available Scripts
+## Features
+* UI written in modern __React__, using ES6 principles and functional components with React Hooks
+* UI written exclusively with custom SCSS styling
+* Bootstrapped with create-react-app
+* Backend written in __NodeJS/Express__
+* Relational data storage with __MongoDB__
+* User details managed with RESTful architecture
+* Sessions managed with local storage
 
-In the project directory, you can run:
+## Installation
+* Install MongoDB and create a db named workspace-app
+* Clone this repository ```https://github.com/Dino-Nguyen/WorkSpace-User-FrontEnd.git```
+* create .env.local file same as .env.local.example and enter required variables
+* Run ```npm install -f``` to install dependencies
+* Frontend should be running on ```http://127.0.0.1:3000``` and Express API on ```http://127.0.0.1:8000```
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Live App
+* __The Live App is currently in progress to implement new feature__
+* https://my-workspace-7cb4d.web.app/
+* Sign up or use demo account:
+* __Email__: demo@gmail.com
+* __Password__ demo123
