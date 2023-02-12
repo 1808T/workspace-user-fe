@@ -1,0 +1,136 @@
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  background: url('../../../public//images/sign-in-background.jpg') no-repeat
+    center/cover;
+  opacity: 0.85;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  position: relative;
+  height: 40%;
+  width: 20%;
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  font-family: 'Roboto';
+  min-width: 300px;
+  min-height: 370px;
+}
+
+.form-header {
+  position: absolute;
+  height: 30%;
+  width: 90%;
+  left: 5%;
+  top: -5%;
+  background: linear-gradient(180deg, #e93b77 0%, #da1f63 100%);
+  box-shadow: 0px 2px 6px rgba(220, 34, 101, 0.36);
+  border-radius: 8px;
+  color: #ffffff;
+  overflow: hidden;
+
+  &--title {
+    font-size: 1.5rem;
+  }
+
+  &--brands {
+    position: absolute;
+    width: 60%;
+    left: 20%;
+
+    & button {
+      width: 20%;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #ffffff;
+      padding: 8px;
+      margin: 0 5px;
+      border-radius: 8px;
+
+      &:hover {
+        background: #ffffff;
+        color: #e93b77;
+      }
+    }
+  }
+}
+
+.form-body {
+  position: absolute;
+  top: 35%;
+  left: 7.5%;
+  width: 80%;
+  height: 70%;
+
+  &--group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+
+    & input {
+      border: 1px solid #c7ccd0;
+      border-radius: 8px;
+      padding: 10px;
+      width: 100%;
+      font-family: 'DM Sans';
+
+      &:focus {
+        outline: none;
+        background: blanchedalmond;
+      }
+    }
+  }
+}
+
+.form-footer {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--switch {
+    align-self: flex-start;
+    padding: 10px 20px;
+  }
+
+  &--sign-in-btn {
+    background: linear-gradient(180deg, #e93b77 0%, #da1f63 100%);
+    box-shadow: 0px 2px 6px rgba(220, 34, 101, 0.36);
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.75rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    border: 1px solid #e93b77;
+
+    &:hover {
+      background: #ffffff;
+      color: #e93b77;
+    }
+  }
+
+  &--sign-up-btn {
+    border: none;
+    background: #ffffff;
+    color: #e91f63;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,35 @@
+@mixin media-small {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin media-medium {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (max-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin media-height-medium {
+  @media screen and (max-height: 900px) {
+    @content;
+  }
+}
+
+@mixin media-height-small {
+  @media screen and (max-height: 768px) {
+    @content;
+  }
+}

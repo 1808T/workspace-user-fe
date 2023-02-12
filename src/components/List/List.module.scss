@@ -1,0 +1,127 @@
+.list {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 100%;
+  margin: 0 10px;
+  padding: 0px 0px 20px;
+
+  &--header {
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba($color: #000000, $alpha: 0.1);
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+
+    .editable-title {
+      font-family: 'DM Sans';
+      font-weight: bold;
+      background-color: inherit;
+      font-size: 1.25rem;
+      width: 100%;
+      border: none;
+      cursor: auto;
+      border-radius: 4px;
+      padding: 16.5px 0;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: space-between;
+
+      & button {
+        border: none;
+        cursor: pointer;
+        padding: 4px 7px;
+        margin-left: 10px;
+
+        &:first-child {
+          background: none;
+          padding: 2px;
+          display: flex;
+          align-items: center;
+
+          &:hover {
+            & svg {
+              fill: #6772fe;
+            }
+          }
+        }
+
+        &:last-child {
+          background: #e8eaff;
+          border-radius: 7px;
+          padding: 2px;
+          display: flex;
+          align-items: center;
+
+          &:hover {
+            background: #6772fe;
+
+            & svg {
+              fill: #e8eaff;
+            }
+          }
+        }
+
+        & svg {
+          fill: #768396;
+
+          & rect {
+            fill: #6772fe;
+          }
+        }
+      }
+    }
+  }
+
+  &--body {
+    padding: 0;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+}
+
+.list--body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f3f4f8;
+}
+
+.list--body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f3f4f8;
+}
+
+.list--body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #232360;
+}
+
+.card-ghost {
+  transition: transform 0.18s ease;
+  transform: rotateZ(5deg);
+}
+
+.card-ghost-drop {
+  transition: transform 0.18s ease-in-out;
+  transform: rotateZ(0deg);
+}
+
+.cards-drop-preview {
+  background-color: rgba(150, 150, 200, 0.1);
+  border: 1px dashed #abc;
+  margin: 5px 45px 5px 5px;
+}

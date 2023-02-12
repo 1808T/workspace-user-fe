@@ -1,0 +1,16 @@
+.tasks-container {
+  position: relative;
+  top: 80px;
+  left: 80px;
+  width: calc(100vw - 80px);
+  min-width: calc(100vw - 80px - 80px);
+  min-height: calc(100vh - 80px);
+  overflow: hidden;
+  font-family: 'DM Sans';
+  background: #f3f4f8;
+}
+
+.show-side-bar {
+  left: calc(60px + 20px);
+  width: calc(100vw - 80px);
+}

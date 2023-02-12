@@ -1,0 +1,88 @@
+.add-list-form {
+  position: relative;
+  font-family: 'DM Sans';
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  margin: 0 20px 20px 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba($color: #000000, $alpha: 0.1);
+  cursor: pointer;
+
+  &--btn {
+    font-family: 'DM Sans';
+    background: none;
+    padding: 4px 20px;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    color: #232360;
+
+    &:hover {
+      color: #ffffff;
+      background: #5051f9;
+    }
+  }
+
+  &--content {
+    display: none;
+  }
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 20px;
+
+  & input {
+    font-family: 'DM Sans';
+    height: 30px;
+    padding: 5px 15px;
+    background: #f3f7fa;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+    &:focus {
+      outline: none;
+      background: blanchedalmond;
+    }
+
+    &::placeholder {
+      color: #23235f;
+    }
+  }
+
+  .btn-group {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    & button {
+      font-family: 'DM Sans';
+      font-weight: bold;
+      color: #232360;
+      background: none;
+      border: none;
+      margin: 0 5px;
+      padding: 2px 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 1px 1px rgba($color: #000000, $alpha: 0.1);
+
+      &:hover {
+        color: #ffffff;
+        background: #5051f9;
+      }
+    }
+  }
+}
+
+.hide-btn {
+  display: none;
+}

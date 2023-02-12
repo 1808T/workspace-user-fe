@@ -1,0 +1,158 @@
+.comment {
+  display: flex;
+  position: relative;
+  padding: 5px;
+  margin-top: 10px;
+
+  &--author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    min-width: 50px;
+    height: 50px;
+
+    & span {
+      &:last-child {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  &--feature {
+    width: 100%;
+
+    .content {
+      margin: 0;
+      min-height: 50px;
+      border-radius: 8px;
+      background: #cad4e0;
+      padding: 10px 15px;
+      text-align: justify;
+      border: 1px solid grey;
+    }
+
+    .feature {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      & span {
+        cursor: pointer;
+
+        &:nth-child(2) {
+          font-size: 0.75rem;
+          height: 18px;
+          margin-right: 5px;
+        }
+
+        & svg {
+          transform: scale(0.75);
+        }
+      }
+
+      .created-at {
+        font-size: 0.75rem;
+        cursor: auto;
+        height: 18px;
+        margin-left: 5px;
+      }
+
+      .show-replies-btn {
+        position: absolute;
+        right: 0;
+
+        & button {
+          background: #f3f4f8;
+          border: none;
+          cursor: pointer;
+          font-family: 'DM Sans';
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .modal {
+    position: absolute;
+    top: 6px;
+    z-index: 1;
+    padding: 8px 12px;
+    width: 225px;
+    box-shadow: 0 1px 1px rgba($color: #000000, $alpha: 0.1);
+    border: 1px solid grey;
+    border-radius: 8px;
+    background: #cad4e0;
+
+    &--header {
+      display: flex;
+      align-items: center;
+      padding-bottom: 5px;
+      border-bottom: 1px solid black;
+
+      & h3 {
+        font-size: 0.8rem;
+        font-weight: 400;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+      }
+
+      & button {
+        border: none;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: inherit;
+        cursor: pointer;
+
+        & svg {
+          transform: scale(0.6);
+        }
+
+        &:hover {
+          & svg {
+            fill: #5051f9;
+          }
+        }
+      }
+    }
+
+    &--body {
+      & p {
+        margin: 5px 0;
+        font-size: 0.75rem;
+        text-align: justify;
+      }
+    }
+
+    &--footer {
+      & button {
+        font-family: 'DM Sans';
+        width: 100%;
+        height: 30px;
+        font-size: 0.8rem;
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        color: #ffffff;
+        background: #5051f9;
+        box-shadow: 0px 8px 14px rgba(62, 107, 224, 0.12);
+
+        &:hover {
+          background: #6a3de3;
+        }
+      }
+    }
+  }
+}
+
+.nested-comments {
+  padding-left: 30px;
+}

@@ -1,0 +1,51 @@
+.add-card-form {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba($color: #000000, $alpha: 0.1);
+  padding: 20px 0;
+  margin-bottom: 20px;
+
+  & input {
+    font-family: 'DM Sans';
+    width: 70%;
+    border: none;
+    height: 30px;
+    padding: 5px 15px;
+    background: #f3f7fa;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+    &:focus {
+      outline: none;
+      background: blanchedalmond;
+    }
+
+    &::placeholder {
+      color: #23235f;
+    }
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 20px;
+
+    & button {
+      font-family: 'DM Sans';
+      font-weight: bold;
+      color: #232360;
+      background: none;
+      border: none;
+      margin: 0 5px;
+      padding: 2px 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 1px 1px rgba($color: #000000, $alpha: 0.2);
+
+      &:hover {
+        color: #ffffff;
+        background: #5051f9;
+      }
+    }
+  }
+}

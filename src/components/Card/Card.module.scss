@@ -1,0 +1,144 @@
+.card {
+  position: relative;
+  padding: 5px 0 25px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 1px rgba($color: #000000, $alpha: 0.1);
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  &--close-btn {
+    display: none;
+    padding: 1px 2px;
+    position: absolute;
+    background: #f3f4f8;
+    border-radius: 4px;
+    border: none;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+
+    & svg {
+      font-size: 1rem;
+      color: #6772fe;
+    }
+
+    &:hover {
+      & svg {
+        color: #000000;
+      }
+    }
+  }
+
+  &--edit-btn {
+    display: none;
+    position: absolute;
+    background: #f3f4f8;
+    padding: 2px 4px;
+    border-radius: 4px;
+    box-shadow: rgba($color: #000000, $alpha: 0.1);
+    border: none;
+    top: 10px;
+    right: 40px;
+    cursor: pointer;
+
+    & svg {
+      font-size: 0.9rem;
+      color: #6772fe;
+    }
+
+    &:hover {
+      & svg {
+        color: #000000;
+      }
+    }
+  }
+
+  &:hover {
+    .card--edit-btn,
+    .card--close-btn {
+      display: block;
+    }
+  }
+
+  &--cover {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 20px;
+    height: 150px;
+  }
+
+  & h4 {
+    margin: 10px 20px;
+    text-align: left;
+  }
+
+  &--description {
+    margin: 10px 20px;
+    text-align: left;
+  }
+
+  &--end-date {
+    display: flex;
+
+    & p {
+      text-align: left;
+      padding: 4px;
+      border: 1px solid #e2e2e2;
+      border-radius: 4px;
+      margin: 0 20px 10px;
+    }
+  }
+
+  &--in-charge {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+
+    & div:first-child {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & span {
+        padding: 0 5px;
+      }
+    }
+
+    & button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      padding: 0;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+
+      & svg {
+        transform: scale(1.25);
+        fill: #768396;
+
+        &:hover {
+          fill: #00ff00;
+        }
+      }
+    }
+
+    .complete {
+      & svg {
+        fill: #00ff00;
+
+        &:hover {
+          fill: #768396;
+        }
+      }
+    }
+  }
+}

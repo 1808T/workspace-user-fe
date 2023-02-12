@@ -1,0 +1,188 @@
+@import '../../setting';
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #e5e5e5;
+  display: flex;
+  overflow: hidden;
+  font-family: 'Roboto';
+}
+
+.background-container {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  border-radius: 16px;
+
+  .background {
+    background: url('../../../public/images/sign-up-background.jpg') top 40%
+      center/cover no-repeat;
+    border-radius: 16px;
+    margin: 1.5%;
+    width: 100%;
+    height: 97%;
+    position: relative;
+  }
+}
+
+.form-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .form {
+    width: 50%;
+    padding: 30px;
+
+    &--title {
+      font-size: 2rem;
+      color: #e93b77;
+    }
+
+    &--brands {
+      padding: 8px;
+      margin-bottom: 40px;
+
+      & button {
+        width: 12.5%;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #e93b77;
+        padding: 8px;
+        margin: 0 5px;
+        border-radius: 8px;
+
+        &:hover {
+          color: #ffffff;
+          background: #e93b77;
+        }
+      }
+    }
+
+    &--group {
+      width: 100%;
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      &:last-of-type {
+        flex-direction: row;
+      }
+
+      & input {
+        border: 1px solid #c7ccd0;
+        border-radius: 8px;
+        width: 90%;
+        height: 100%;
+        padding: 10px;
+        font-family: 'DM Sans';
+
+        &:focus {
+          outline: none;
+          background: blanchedalmond;
+        }
+      }
+
+      .form--checkbox {
+        width: 10%;
+        transform: scale(1.25);
+      }
+    }
+
+    &--btn {
+      background: linear-gradient(180deg, #e93b77 0%, #da1f63 100%);
+      box-shadow: 0px 2px 6px rgba(220, 34, 101, 0.36);
+      width: 90%;
+      border-radius: 8px;
+      padding: 8px;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.75rem;
+      cursor: pointer;
+      border: none;
+      font-size: 1rem;
+      border: 1px solid #e93b77;
+
+      &:hover {
+        background: #ffffff;
+        color: #e93b77;
+      }
+
+      &:disabled {
+        background: #dddddd;
+        color: #e93b77;
+      }
+    }
+
+    &--link {
+      border: none;
+      background: #e5e5e5;
+      color: #e91f63;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.offscreen {
+  display: none;
+}
+
+.instruction {
+  display: block;
+  text-align: justify;
+  width: 95%;
+  font-size: 1rem;
+  color: #e93b77;
+
+  & svg {
+    transform: scale(1.25);
+    margin-right: 5px;
+  }
+}
+
+.valid,
+.invalid {
+  position: absolute;
+  top: 8px;
+  right: 25px;
+  font-size: 1.25rem;
+  color: #e93b77;
+}
+
+.error-message {
+  display: block;
+}
+
+@include media-xl {
+  .form {
+    min-width: 400px;
+  }
+}
+
+@include media-lg {
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .background-container {
+    display: none;
+  }
+}
+
+@include media-small {
+  .form {
+    min-width: 280px;
+  }
+}

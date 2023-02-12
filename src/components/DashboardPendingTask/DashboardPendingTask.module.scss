@@ -1,0 +1,17 @@
+.pendingTask {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 40px;
+    &--title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #232360;
+        margin-left: 50px;
+    }
+    &--content {
+        margin-bottom: 20px;
+        border-radius: 16px;
+    }
+}

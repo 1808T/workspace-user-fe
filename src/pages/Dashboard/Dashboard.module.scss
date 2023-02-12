@@ -1,0 +1,36 @@
+.dashboard-container {
+  position: relative;
+  display: flex;
+  top: 80px;
+  left: 80px;
+  width: calc(100vw - 80px);
+  min-width: calc(100vw - 80px - 80px);
+  height: calc(100vh - 80px);
+  overflow: hidden;
+  font-family: 'DM Sans';
+  background: #f3f4f8;
+
+  .dashboard-stats {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    min-height: 100vh;
+    min-width: 950px;
+  }
+
+  .dashboard-message {
+    width: 20%;
+    min-width: 350px;
+    padding: 20px;
+    text-align: left;
+    background: #ffffff;
+
+    & h3 {
+      margin: 0;
+    }
+  }
+}
+.show-side-bar {
+  left: calc(60px + 20px);
+  width: calc(100vw - 80px);
+}

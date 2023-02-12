@@ -1,0 +1,62 @@
+@import '../../setting';
+
+.statistic {
+  height: 18%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px 20px 40px;
+
+  &--task-completed,
+  &--new-task,
+  &--project-done {
+    width: 25%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 0 30px;
+    min-width: 225px;
+
+    .title {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #e8edf1;
+
+      & h3 {
+        color: #8d98a9;
+        font-weight: normal;
+        width: 75%;
+        padding: 0 10px;
+        text-align: left;
+      }
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      padding-top: 20px;
+
+      &--img {
+        flex: 2;
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      &--text {
+        flex: 1;
+        text-align: right;
+        color: #768396;
+        font-size: 1rem;
+
+        & p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@include media-height-medium {
+  .statistic {
+    height: 22%;
+  }
+}

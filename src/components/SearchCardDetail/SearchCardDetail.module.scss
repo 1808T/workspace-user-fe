@@ -1,0 +1,196 @@
+.backdrop {
+  position: absolute;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  background: rgba($color: #000000, $alpha: 0.4);
+}
+
+.card-detail {
+  position: absolute;
+  top: 10vh;
+  left: 30vw;
+  min-height: 300px;
+  border-radius: 14px;
+  width: 35vw;
+  background: #f3f4f8;
+  overflow: hidden;
+  z-index: 11;
+  padding: 20px;
+
+  &--header {
+    .editable-title {
+      font-family: 'DM Sans';
+      font-weight: bold;
+      background-color: inherit;
+      font-size: 1.125rem;
+      width: 100%;
+      border: none;
+      cursor: auto;
+      border-radius: 4px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .end-date {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .in-charge {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      & p {
+        margin: 0;
+        padding-right: 10px;
+      }
+
+      .clear-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        border-radius: 50%;
+
+        & svg {
+          fill: red;
+          transform: scale(0.75);
+
+          &:hover {
+            fill: #5051f9;
+          }
+        }
+      }
+
+      .add-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        border-radius: 50%;
+
+        & svg {
+          fill: #768396;
+
+          &:hover {
+            fill: #5051f9;
+          }
+        }
+
+        .members {
+          position: absolute;
+          top: 25px;
+          left: 0;
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+          border-radius: 10px;
+          width: 200px;
+          background: #ffffff;
+          box-shadow: 2px 2px 5px #888888;
+          z-index: 12;
+
+          & h3 {
+            margin: 0 0 20px 0;
+            font-size: 1.125rem;
+            font-weight: normal;
+            text-align: center;
+          }
+
+          .owner {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            & p {
+              margin: 0 10px;
+            }
+          }
+
+          .member {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-top: 10px;
+
+            & p {
+              margin: 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--body {
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .img-container {
+      position: relative;
+
+      &:hover {
+        .clear-img-btn {
+          display: block;
+        }
+      }
+    }
+
+    .clear-img-btn {
+      display: none;
+      position: absolute;
+      z-index: 5;
+      right: 2px;
+      top: 2px;
+      background: none;
+      border: none;
+      border-radius: 10px;
+      color: #f3f4f8;
+      cursor: pointer;
+    }
+
+    & img {
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &--change-img {
+    align-self: flex-start;
+    margin-bottom: 10px;
+  }
+
+  &--description {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    & label {
+      margin-bottom: 5px;
+    }
+
+    & textarea {
+      font-family: 'DM Sans';
+      height: 50px;
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 1rem;
+    }
+  }
+}
